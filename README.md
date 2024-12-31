@@ -1,5 +1,3 @@
-# Welcome to My Personal Website
-
 [Personal Information](#personal-information) | [Education](#education) | [Research](#research) | [Projects](#projects) | [Publications](#publications) | [Contact](#contact)
 
 ## Personal Information
