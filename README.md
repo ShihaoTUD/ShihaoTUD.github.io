@@ -1,71 +1,73 @@
-# Personal Academic Website
+# Welcome to My Personal Website
 
-This is my personal academic website showcasing my CV, research interests, and achievements. Visit the live site at [shihaotud.github.io](https://shihaotud.github.io).
+[Personal Information](#personal-information) | [Education](#education) | [Research](#research) | [Projects](#projects) | [Publications](#publications) | [Contact](#contact)
 
-## Website Sections
+## Personal Information
 
-### 🎓 CV Section
-- Academic background
-- Research experience
-- Technical skills
-- Publications and presentations
-- Awards and honors
+- **Name**: Shihao
+- **Current Position**: Graduate Student
+- **Institution**: Technical University of Dresden
+- **Research Area**: Computer Science
+- **Languages**: English, German, Chinese
 
-### 🔬 Research Interests
-- Current research focus
-- Past research projects
-- Academic collaborations
-- Research publications
+## Education
 
-### 🌟 Personal Interests
-- Technical interests
-- Hobbies and activities
-- Photography
-- Outdoor activities
+### Technical University of Dresden
+- **Degree**: Master in Computer Science
+- **Period**: 2022 - Present
+- **Focus Areas**: Machine Learning, Computer Vision
 
-## Development
+### Previous University
+- **Degree**: Bachelor in Computer Science
+- **Period**: 2018 - 2022
+- **Thesis**: [Your Thesis Title]
 
-This website is built with:
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- GitHub Pages
+## Research
 
-## Setup and Updates
+### Current Research
+- Machine Learning Applications
+- Computer Vision
+- Deep Learning
 
-1. Clone the repository:
-```bash
-git clone https://github.com/ShihaoTUD/ShihaoTUD.github.io.git
-```
+### Research Interests
+- AI and Machine Learning
+- Computer Vision
+- Neural Networks
+- Data Analysis
 
-2. Make changes:
-- Edit `index.html` for content changes
-- Modify styles in the CSS section
-- Update JavaScript functions as needed
+## Projects
 
-3. Test locally by opening `index.html` in your browser
+### Project 1: [Project Name]
+- Description of the project
+- Technologies used
+- Results and impact
 
-4. Deploy:
-```bash
-git add .
-git commit -m "Update website content"
-git push origin main
-```
+### Project 2: [Project Name]
+- Description of the project
+- Technologies used
+- Results and impact
 
-## Customization
+## Publications
 
-The website can be customized by:
-- Updating the content in each section
-- Modifying the color scheme
-- Adding new sections or features
-- Customizing the layout
+### 2024
+1. [Publication Title]
+   - Journal/Conference
+   - Authors
+   - Link to paper
+
+### 2023
+1. [Publication Title]
+   - Journal/Conference
+   - Authors
+   - Link to paper
 
 ## Contact
 
-For any questions or suggestions, feel free to:
-- Open an issue in this repository
-- Contact me through GitHub [@ShihaoTUD](https://github.com/ShihaoTUD)
-- Send me an email at [your.email@example.com]
+- **Email**: [your.email@example.com]
+- **GitHub**: [@ShihaoTUD](https://github.com/ShihaoTUD)
+- **LinkedIn**: [Your LinkedIn]
+- **Office**: [Your Office Location]
 
 ---
-© 2024 Shihao | Technical University of Dresden
+
+[Back to Top](#welcome-to-my-personal-website)
