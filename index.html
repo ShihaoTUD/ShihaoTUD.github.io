@@ -103,25 +103,9 @@
             color: #002a80;
         }
 
-        /* Publications */
-        .pub-list {
-            list-style: decimal;
-            padding-left: 22px;
-        }
-
-        .pub-list li {
-            margin-bottom: 10px;
-        }
-
         .section {
             margin-top: 40px;
             margin-bottom: 40px;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #ddd;
-            margin: 40px 0;
         }
 
         @media (max-width: 800px) {
@@ -138,147 +122,63 @@
 
     <!-- Navigation -->
     <div class="top-nav">
-        <a href="#home" class="current">Home</a>
+        <a href="index.html" class="current">Home</a>
         <span class="dot">·</span>
-        <a href="#research">Research</a>
+        <a href="research.html">Research</a>
         <span class="dot">·</span>
-        <a href="#publications">Publications</a>
+        <a href="publications.html">Publications</a>
         <span class="dot">·</span>
-        <a href="#news">News</a>
+        <a href="news.html">News</a>
         <span class="dot">·</span>
-        <a href="#gallery">Gallery</a>
+        <a href="gallery.html">Gallery</a>
     </div>
 
     <!-- HOME -->
-    <div id="home" class="section">
-        <h2>Faculty</h2>
-
+    <div class="section">
         <div class="home-layout">
-            <!-- OPTIONAL IMAGE – remove if you do not want it -->
             <div>
-                <!-- Delete this <img> tag if you want absolutely no picture -->
+                <!-- Placeholder for photo - replace with actual image -->
                 <!-- <img src="your-photo.jpg" alt="Shihao Fu" class="portrait"> -->
 
                 <div class="social-icons">
                     <a class="social-link social-gs" href="https://scholar.google.com" target="_blank" title="Google Scholar">G</a>
                     <a class="social-link social-li" href="https://www.linkedin.com" target="_blank" title="LinkedIn">in</a>
                     <a class="social-link social-rg" href="https://www.researchgate.net" target="_blank" title="ResearchGate">R</a>
-                    <a class="social-link social-cv" href="Shihao_Fu_CV.pdf" target="_blank" title="CV">CV</a>
+                    <a class="social-link social-cv" href="CV_Shihao_Fu.pdf" target="_blank" title="CV">CV</a>
                 </div>
             </div>
 
             <div>
                 <strong style="font-size: 20px;">Shihao Fu</strong>
-                <p>
-                    I am a PhD candidate in the 
-                    <a href="https://www.tudelft.nl/en/ceg" target="_blank">Faculty of Civil Engineering and Geosciences</a> 
-                    at <a href="https://www.tudelft.nl/en/" target="_blank">Delft University of Technology</a>, The Netherlands.
-                    My research focuses on the evolution of rock salt fracture geometry and mechanical behavior during
-                    fluid–rock interactions.
+                <p style="margin-top: 5px; margin-bottom: 15px;">
+                    <em>PhD Candidate</em><br>
+                    <a href="https://www.tudelft.nl/en/ceg" target="_blank">Faculty of Civil Engineering and Geosciences</a><br>
+                    <a href="https://www.tudelft.nl/en/" target="_blank">Delft University of Technology</a><br>
+                    The Netherlands
+                </p>
+                <p style="margin-bottom: 15px;">
+                    📧 <a href="mailto:s.fu-2@tudelft.nl">s.fu-2@tudelft.nl</a><br>
+                    📱 +31 0622472053
                 </p>
                 <p>
-                    I investigate dissolution, transport, and healing processes in rock salt through laboratory experiments 
-                    and finite element simulations. My work combines flow-through experiments, long-term healing tests, 
-                    image-based fracture characterization, and constitutive modeling implemented via Fortran subroutines 
-                    in ABAQUS.
+                    I am a PhD candidate in Applied Geophysics and Petrophysics at TU Delft, with my defense scheduled for February 26, 2026. 
+                    My research focuses on the evolution of rock salt fracture geometry and mechanical properties during fluid-rock interactions, 
+                    combining laboratory experiments and numerical modeling to advance understanding of fracture dissolution, transport, and healing processes.
                 </p>
                 <p>
-                    I received my B.S. and M.S. degrees in Petroleum Engineering from 
-                    <a href="https://www.cup.edu.cn" target="_blank">China University of Petroleum (Beijing)</a> 
-                    and <a href="https://www.yangtzeu.edu.cn" target="_blank">Yangtze University</a>. 
+                    My work contributes to the design of safer and more reliable rock salt caverns for large-scale energy storage, 
+                    supporting the energy transition. I investigate how rock salt fractures dissolve, evolve, and heal under varying chemical and 
+                    mechanical conditions through flow-through visualization experiments, long-term healing tests, and advanced constitutive modeling 
+                    implemented via Fortran subroutines in ABAQUS and COMSOL.
+                </p>
+                <p>
+                    I received my M.S. in Petroleum Engineering from 
+                    <a href="https://www.cup.edu.cn" target="_blank">China University of Petroleum (Beijing)</a> and my B.S. from 
+                    <a href="https://www.yangtzeu.edu.cn" target="_blank">Yangtze University</a>. 
                     My previous work focused on hydraulic fracture initiation and propagation in coal measure shale reservoirs.
                 </p>
             </div>
         </div>
-    </div>
-
-    <hr>
-
-    <!-- RESEARCH -->
-    <div id="research" class="section">
-        <h2>Research</h2>
-
-        <h3>Sealing and healing behaviour of rock salt fractures</h3>
-        <p>
-            My PhD project investigates how rock salt fractures dissolve, evolve, and heal under varying chemical and
-            mechanical conditions. Using flow-through visualization experiments, I study transitions between diffusion-
-            and advection-dominated regimes. Detailed image processing (MATLAB, Avizo, MeshLab) and 3D surface reconstruction
-            (SolidWorks) are used to quantify aperture changes and interface roughness.
-        </p>
-        <p>
-            Long-term healing experiments (up to one year) are conducted to measure shear strength recovery, internal friction
-            angle, and stick–slip behavior using direct shear tests. On the modelling side, I extend an elastic–plastic 
-            constitutive model incorporating healing, implemented through user-defined Fortran subroutines in ABAQUS, and use 
-            COMSOL for reactive-transport processes in evolving fracture geometries.
-        </p>
-
-        <h3>Hydraulic fracturing in coal measure shale reservoirs</h3>
-        <p>
-            My Master's research involved true triaxial hydraulic fracturing experiments on shale–coal interbedded samples,
-            studying how lithological layering and in-situ stress contrasts influence fracture propagation. I also developed
-            a 3D hydraulic fracture model in ABAQUS using a coupled seepage–stress–damage cohesive framework.
-        </p>
-    </div>
-
-    <!-- PUBLICATIONS -->
-    <div id="publications" class="section">
-        <h2>Publications</h2>
-
-        <h3>Journal articles</h3>
-        <ol class="pub-list">
-            <li>
-                Fu, S., Bruhn, D. F., Dieudonné, A. C., Kai, L., Pluymakers, A. M. (2025). 
-                Visualization and quantification of dissolution and transport processes in rock salt channels. 
-                <em>Geoenergy Science and Engineering</em>, submitted.  
-                DOI: (to be assigned)
-            </li>
-            <li>
-                Fu, S., Bruhn, D. F., Dieudonné, A. C., Kai, L., Pluymakers, A. M. (2025). 
-                Fracture healing and surface roughness evolution in rock salt. 
-                <em>Rock Mechanics and Rock Engineering</em>, submitted.  
-                DOI: (to be assigned)
-            </li>
-            <li>
-                Fu, S., Pluymakers, A. M., Bruhn, D. F., Dieudonné, A. C. (2025). 
-                Analysis of rock salt healing within a cohesive zone modelling framework. 
-                (In preparation). DOI: (to be assigned)
-            </li>
-            <li>
-                Tan, P., Chen, Z., Fu, S., Zhao, Q. (2023). Experimental investigation on fracture growth for integrated 
-                hydraulic fracturing in multiple gas-bearing formations. 
-                <em>Geoenergy Science and Engineering</em>, 231, 212316.  
-                DOI: <a href="https://doi.org/10.1016/j.geoen.2023.212316" target="_blank">10.1016/j.geoen.2023.212316</a>
-            </li>
-            <li>
-                Fu, S., Hou, B., Xia, Y., Chen, M., Wang, S., Tan, P. (2022). Hydraulic fracture height growth in 
-                coal measure shale strata with complex geological characteristics. 
-                <em>Journal of Petroleum Science and Engineering</em>, 211, 110164.  
-                DOI: <a href="https://doi.org/10.1016/j.petrol.2022.110164" target="_blank">10.1016/j.petrol.2022.110164</a>
-            </li>
-        </ol>
-
-        <h3>Conference presentations</h3>
-        <ol class="pub-list">
-            <li>Deep Geo-Energy Conference, Beijing, China (2025).</li>
-            <li>8th International Conference on Coupled THMC Processes, Nicosia, Cyprus (2025).</li>
-            <li>SaltMech XI, Online, USA (2025).</li>
-            <li>NAC Conference, The Netherlands (2025).</li>
-            <li>15th Euroconference on Rock Physics and Rock Mechanics, The Netherlands (2024).</li>
-            <li>SaltMech X, The Netherlands (2022).</li>
-            <li>ARMA US Rock Mechanics/Geomechanics Symposium (2021).</li>
-        </ol>
-    </div>
-
-    <!-- NEWS -->
-    <div id="news" class="section">
-        <h2>News</h2>
-        <p>(You can add announcements, conferences, awards, travels, etc.)</p>
-    </div>
-
-    <!-- GALLERY -->
-    <div id="gallery" class="section">
-        <h2>Gallery</h2>
-        <p>(Images of experiments, conferences, fieldwork, equipment, etc.)</p>
     </div>
 
 </body>
