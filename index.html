@@ -47,11 +47,6 @@
             color: #111;
         }
 
-        h1 {
-            font-size: 26px;
-            margin-bottom: 10px;
-        }
-
         h2 {
             font-size: 22px;
             margin-top: 35px;
@@ -95,18 +90,10 @@
             text-decoration: none;
         }
 
-        .social-gs { background: #4285F4; }   /* Google Scholar */
-        .social-li { background: #0A66C2; }   /* LinkedIn */
-        .social-rg { background: #00CC99; }   /* ResearchGate-ish */
-        .social-cv { background: #555555; }   /* CV */
-
-        .name-block {
-            margin-bottom: 10px;
-        }
-
-        .name-block strong {
-            font-size: 20px;
-        }
+        .social-gs { background: #4285F4; }
+        .social-li { background: #0A66C2; }
+        .social-rg { background: #00CC99; }
+        .social-cv { background: #555555; }
 
         a {
             color: #0044cc;
@@ -116,14 +103,7 @@
             color: #002a80;
         }
 
-        /* Section headings under Home */
-        .subheading {
-            font-size: 18px;
-            font-weight: 700;
-            margin-top: 35px;
-        }
-
-        /* Publications styling */
+        /* Publications */
         .pub-list {
             list-style: decimal;
             padding-left: 22px;
@@ -156,19 +136,15 @@
 </head>
 <body>
 
-    <!-- Top navigation -->
+    <!-- Navigation -->
     <div class="top-nav">
         <a href="#home" class="current">Home</a>
-        <span class="dot">·</span>
-        <a href="#team">Team</a>
         <span class="dot">·</span>
         <a href="#research">Research</a>
         <span class="dot">·</span>
         <a href="#publications">Publications</a>
         <span class="dot">·</span>
         <a href="#news">News</a>
-        <span class="dot">·</span>
-        <a href="#openings">Openings</a>
         <span class="dot">·</span>
         <a href="#gallery">Gallery</a>
     </div>
@@ -178,11 +154,10 @@
         <h2>Faculty</h2>
 
         <div class="home-layout">
-            <!-- Left column: portrait + icons (you can delete the img if you prefer no photo) -->
+            <!-- OPTIONAL IMAGE – remove if you do not want it -->
             <div>
-                <!-- Optional photo -->
-                <img src="your-photo.jpg" alt="Shihao Fu" class="portrait">
-                <!-- If you do not want a picture at all, just remove the img tag above. -->
+                <!-- Delete this <img> tag if you want absolutely no picture -->
+                <!-- <img src="your-photo.jpg" alt="Shihao Fu" class="portrait"> -->
 
                 <div class="social-icons">
                     <a class="social-link social-gs" href="https://scholar.google.com" target="_blank" title="Google Scholar">G</a>
@@ -192,79 +167,56 @@
                 </div>
             </div>
 
-            <!-- Right column: name + bio -->
             <div>
-                <div class="name-block">
-                    <strong>Shihao Fu</strong>
-                </div>
+                <strong style="font-size: 20px;">Shihao Fu</strong>
                 <p>
                     I am a PhD candidate in the 
                     <a href="https://www.tudelft.nl/en/ceg" target="_blank">Faculty of Civil Engineering and Geosciences</a> 
-                    at <a href="https://www.tudelft.nl/en/" target="_blank">Delft University of Technology</a>, 
-                    The Netherlands. My research focuses on the evolution of rock salt fracture geometry and 
-                    mechanical properties during fluid–rock interactions, with applications to underground energy storage.
+                    at <a href="https://www.tudelft.nl/en/" target="_blank">Delft University of Technology</a>, The Netherlands.
+                    My research focuses on the evolution of rock salt fracture geometry and mechanical behavior during
+                    fluid–rock interactions.
                 </p>
                 <p>
-                    My PhD thesis investigates the <em>mechanical–chemical evolution</em> of rock salt fractures, combining 
-                    flow-through visualization experiments, long-term healing experiments, and finite element modelling. 
-                    I use laboratory measurements and image-based characterization to quantify dissolution and healing, 
-                    and implement constitutive and cohesive-zone based approaches in ABAQUS and COMSOL to simulate fracture sealing 
-                    and shear strength recovery.
+                    I investigate dissolution, transport, and healing processes in rock salt through laboratory experiments 
+                    and finite element simulations. My work combines flow-through experiments, long-term healing tests, 
+                    image-based fracture characterization, and constitutive modeling implemented via Fortran subroutines 
+                    in ABAQUS.
                 </p>
                 <p>
-                    Before joining TU Delft, I obtained my M.S. and B.S. degrees in Petroleum Engineering from 
+                    I received my B.S. and M.S. degrees in Petroleum Engineering from 
                     <a href="https://www.cup.edu.cn" target="_blank">China University of Petroleum (Beijing)</a> 
-                    and <a href="https://www.yangtzeu.edu.cn" target="_blank">Yangtze University</a>, respectively, 
-                    where I worked on hydraulic fracture initiation and propagation in coal measure shale reservoirs.
+                    and <a href="https://www.yangtzeu.edu.cn" target="_blank">Yangtze University</a>. 
+                    My previous work focused on hydraulic fracture initiation and propagation in coal measure shale reservoirs.
                 </p>
             </div>
         </div>
-
-        <div class="subheading">Postdoctoral researchers</div>
-        <p>(To be added.)</p>
-
-        <div class="subheading">Graduate students</div>
-        <p>(To be added.)</p>
-
-        <div class="subheading">Visiting scholars</div>
-        <p>(To be added.)</p>
     </div>
 
     <hr>
 
-    <!-- TEAM -->
-    <div id="team" class="section">
-        <h2>Team</h2>
-        <p>
-            This section can list postdoctoral researchers, PhD students, Master’s students, and visitors in the group.
-            You can add names, short bios, and links here later.
-        </p>
-    </div>
-
     <!-- RESEARCH -->
     <div id="research" class="section">
         <h2>Research</h2>
+
         <h3>Sealing and healing behaviour of rock salt fractures</h3>
         <p>
-            My current project studies how rock salt fractures dissolve, evolve, and heal under different stress and 
-            fluid conditions. Flow-through experiments are used to investigate the transition between diffusion- and 
-            advection-dominated regimes as a function of fluid concentration, flow rate, and initial fracture geometry. 
-            Image processing (MATLAB, Avizo, MeshLab) and surface reconstruction (SolidWorks) are applied to quantify 
-            changes in fracture morphology.
+            My PhD project investigates how rock salt fractures dissolve, evolve, and heal under varying chemical and
+            mechanical conditions. Using flow-through visualization experiments, I study transitions between diffusion-
+            and advection-dominated regimes. Detailed image processing (MATLAB, Avizo, MeshLab) and 3D surface reconstruction
+            (SolidWorks) are used to quantify aperture changes and interface roughness.
         </p>
         <p>
-            Long-term healing experiments (up to one year) are followed by direct shear tests to characterise shear 
-            strength recovery, internal friction angle, and stick–slip behaviour. On the modelling side, I extend an 
-            elastic–plastic constitutive model with healing behaviour in ABAQUS via user-defined Fortran subroutines and 
-            use COMSOL for reactive-transport simulations in complex fracture geometries.
+            Long-term healing experiments (up to one year) are conducted to measure shear strength recovery, internal friction
+            angle, and stick–slip behavior using direct shear tests. On the modelling side, I extend an elastic–plastic 
+            constitutive model incorporating healing, implemented through user-defined Fortran subroutines in ABAQUS, and use 
+            COMSOL for reactive-transport processes in evolving fracture geometries.
         </p>
 
         <h3>Hydraulic fracturing in coal measure shale reservoirs</h3>
         <p>
-            During my Master’s studies I performed true triaxial hydraulic fracturing experiments on 
-            30 × 30 × 30 cm blocks from coal measure shale formations, investigating the influence of lithological 
-            layering and in-situ stress differences on fracture geometry. I developed a 3D hydraulic fracture model 
-            in ABAQUS using a coupled seepage–stress–damage framework with a cohesive zone representation of fractures.
+            My Master's research involved true triaxial hydraulic fracturing experiments on shale–coal interbedded samples,
+            studying how lithological layering and in-situ stress contrasts influence fracture propagation. I also developed
+            a 3D hydraulic fracture model in ABAQUS using a coupled seepage–stress–damage cohesive framework.
         </p>
     </div>
 
@@ -277,77 +229,57 @@
             <li>
                 Fu, S., Bruhn, D. F., Dieudonné, A. C., Kai, L., Pluymakers, A. M. (2025). 
                 Visualization and quantification of dissolution and transport processes in rock salt channels. 
-                <em>Geoenergy Science and Engineering</em>, submitted. DOI: to be assigned.
+                <em>Geoenergy Science and Engineering</em>, submitted.  
+                DOI: (to be assigned)
             </li>
             <li>
                 Fu, S., Bruhn, D. F., Dieudonné, A. C., Kai, L., Pluymakers, A. M. (2025). 
                 Fracture healing and surface roughness evolution in rock salt. 
-                <em>Rock Mechanics and Rock Engineering</em>, submitted. DOI: to be assigned.
+                <em>Rock Mechanics and Rock Engineering</em>, submitted.  
+                DOI: (to be assigned)
             </li>
             <li>
                 Fu, S., Pluymakers, A. M., Bruhn, D. F., Dieudonné, A. C. (2025). 
-                Analysis of rock salt healing within a cohesive zone modelling framework. In preparation. DOI: to be assigned.
+                Analysis of rock salt healing within a cohesive zone modelling framework. 
+                (In preparation). DOI: (to be assigned)
             </li>
             <li>
                 Tan, P., Chen, Z., Fu, S., Zhao, Q. (2023). Experimental investigation on fracture growth for integrated 
-                hydraulic fracturing in multiple gas bearing formations. 
-                <em>Geoenergy Science and Engineering</em>, 231, 212316. 
-                DOI: <a href="https://doi.org/10.1016/j.geoen.2023.212316" target="_blank">10.1016/j.geoen.2023.212316</a>.
+                hydraulic fracturing in multiple gas-bearing formations. 
+                <em>Geoenergy Science and Engineering</em>, 231, 212316.  
+                DOI: <a href="https://doi.org/10.1016/j.geoen.2023.212316" target="_blank">10.1016/j.geoen.2023.212316</a>
             </li>
             <li>
-                Fu, S., Hou, B., Xia, Y., Chen, M., Wang, S., Tan, P. (2022). The study of hydraulic fracture height growth in 
-                coal measure shale strata with complex geologic characteristics. 
-                <em>Journal of Petroleum Science and Engineering</em>, 211, 110164. 
-                DOI: <a href="https://doi.org/10.1016/j.petrol.2022.110164" target="_blank">10.1016/j.petrol.2022.110164</a>.
+                Fu, S., Hou, B., Xia, Y., Chen, M., Wang, S., Tan, P. (2022). Hydraulic fracture height growth in 
+                coal measure shale strata with complex geological characteristics. 
+                <em>Journal of Petroleum Science and Engineering</em>, 211, 110164.  
+                DOI: <a href="https://doi.org/10.1016/j.petrol.2022.110164" target="_blank">10.1016/j.petrol.2022.110164</a>
             </li>
         </ol>
 
-        <h3>Conference proceedings & presentations</h3>
+        <h3>Conference presentations</h3>
         <ol class="pub-list">
-            <li>
-                Fu, S., Dieudonné, A. C., Bruhn, D. F., Pluymakers, A. M. (2025). 
-                Experimental study on the shear strength recovery of healed rock salt fractures. 
-                <em>Deep Geo-Energy Conference</em>, Beijing, China.
-            </li>
-            <li>
-                Fu, S., Dieudonné, A. C., Bruhn, D. F., Pluymakers, A. M. (2025). 
-                Shear strength recovery of rock salt fractures following healing process. 
-                <em>8th International Conference on Coupled THMC Processes</em>, Nicosia, Cyprus.
-            </li>
-            <li>
-                Fu, S., Dieudonné, A. C., Bruhn, D. F., Kai, L., Pluymakers, A. M. (2025). 
-                Healing behaviour of rock salt fractures with varying surface roughness. 
-                <em>SaltMech XI</em>, Online, New Mexico, USA.
-            </li>
-            <li>
-                Fu, S., Kai, L., Dieudonné, A. C., Bruhn, D. F., Pluymakers, A. M. (2025). 
-                Visualization and quantification of dissolution and transport processes in rock salt channels. 
-                <em>NAC Conference</em>, The Netherlands.
-            </li>
-            <li>
-                Fu, S., Dieudonné, A. C., Bruhn, D. F., Kai, L., Pluymakers, A. M. (2024). 
-                Experimental research on the dissolution and transport process in a rock salt fracture. 
-                <em>15th Euroconference on Rock Physics and Rock Mechanics</em>, The Netherlands.
-            </li>
-            <li>
-                Fu, S., Dieudonné, A. C., Bruhn, D. F., Kai, L., Pluymakers, A. M. (2022). 
-                Interplay between flow and dissolution under stress in rock salt. 
-                <em>SaltMech X</em>, The Netherlands.
-            </li>
-            <li>
-                Fu, S., Chen, M., Xia, Y., Zhou, S., Qiu, X. (2021). 
-                Experimental investigation on fracture propagation for vertical well fracturing in coalbed and shale interbedded reservoir. 
-                <em>ARMA US Rock Mechanics/Geomechanics Symposium</em>, ARMA-2021.
-            </li>
+            <li>Deep Geo-Energy Conference, Beijing, China (2025).</li>
+            <li>8th International Conference on Coupled THMC Processes, Nicosia, Cyprus (2025).</li>
+            <li>SaltMech XI, Online, USA (2025).</li>
+            <li>NAC Conference, The Netherlands (2025).</li>
+            <li>15th Euroconference on Rock Physics and Rock Mechanics, The Netherlands (2024).</li>
+            <li>SaltMech X, The Netherlands (2022).</li>
+            <li>ARMA US Rock Mechanics/Geomechanics Symposium (2021).</li>
         </ol>
     </div>
 
     <!-- NEWS -->
     <div id="news" class="section">
         <h2>News</h2>
-        <p>(You can list recent talks, paper acceptances, awards, or travel here.)</p>
+        <p>(You can add announcements, conferences, awards, travels, etc.)</p>
     </div>
 
-    <!-- OPENINGS -->
-    <div id="openings" class="section">
-        <h2>Openings</
+    <!-- GALLERY -->
+    <div id="gallery" class="section">
+        <h2>Gallery</h2>
+        <p>(Images of experiments, conferences, fieldwork, equipment, etc.)</p>
+    </div>
+
+</body>
+</html>
