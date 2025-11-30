@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research – Shihao Fu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: "Georgia", "Times New Roman", serif;
+            margin: 0;
+            padding: 0 6%;
+            line-height: 1.7;
+            color: #222;
+            background: #ffffff;
+        }
+
+        .top-nav {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            margin: 15px 0 30px;
+            text-align: left;
+        }
+
+        .top-nav a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 4px;
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .top-nav .current {
+            font-weight: 700;
+            color: #000;
+        }
+
+        .dot {
+            color: #999;
+            margin: 0 4px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            color: #111;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: #0044cc;
+        }
+
+        a:hover {
+            color: #002a80;
+        }
+
+        .section {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                padding: 0 4%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="top-nav">
+        <a href="index.html">Home</a>
+        <span class="dot">·</span>
+        <a href="research.html" class="current">Research</a>
+        <span class="dot">·</span>
+        <a href="publications.html">Publications</a>
+        <span class="dot">·</span>
+        <a href="news.html">News</a>
+        <span class="dot">·</span>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div class="section">
+        <h2>Research</h2>
+
+        <h3>Sealing and Healing Behaviour of Rock Salt Fractures</h3>
+        <p><em>PhD Research, September 2021 – Present</em></p>
+        
+        <p>
+            My PhD project investigates the mechanical-chemical evolution of rock salt fractures, combining experiments and 
+            numerical modeling to study fracture geometry evolution and mechanical healing. This research is funded by the 
+            Chinese Scholarship Council for Doctoral Education (Grant No. 202106440022) and the Cementegrity Project under 
+            the ACT program (Accelerating CCS Technologies) through the Horizon 2020 framework (Grant No. 691712).
+        </p>
+
+        <p><strong>Dissolution and Transport Processes:</strong></p>
+        <p>
+            I design and conduct flow-through visualization experiments to study how fluid concentration, flow rate, and 
+            initial geometry influence the transition between diffusion- and advection-dominated regimes in rock salt fracture 
+            dissolution. Using advanced image processing with MATLAB and Avizo, combined with 3D surface reconstruction in 
+            MeshLab and SolidWorks, I quantify aperture changes and interface roughness evolution. These experimental findings 
+            are complemented by reactive-transport simulations in COMSOL to understand the coupling between flow and dissolution 
+            under stress conditions.
+        </p>
+
+        <p><strong>Fracture Healing and Strength Recovery:</strong></p>
+        <p>
+            I conduct long-term healing experiments (up to one year) on rock salt fractures, followed by direct shear testing 
+            to evaluate shear strength recovery. This work focuses on quantifying changes in internal friction angle and 
+            stick-slip behavior. Microscopy techniques are employed to examine microstructural evolution before and after healing, 
+            providing insights into the healing mechanisms at different scales.
+        </p>
+
+        <p><strong>Constitutive Modeling:</strong></p>
+        <p>
+            I have extended an elastic-plastic constitutive model to incorporate the healing behavior of rock salt fractures. 
+            This advanced model is implemented through user-defined Fortran subroutines (UMAT) in ABAQUS, enabling predictive 
+            simulations of fracture evolution under coupled hydro-mechanical-chemical conditions. The model captures the complex 
+            interplay between stress, fluid flow, dissolution, and healing processes.
+        </p>
+
+        <p><strong>Research Impact:</strong></p>
+        <p>
+            These findings contribute to the design of safer and more reliable rock salt caverns for large-scale energy storage 
+            applications, supporting the energy transition by enabling efficient storage of hydrogen, compressed air, and other 
+            energy carriers in subsurface salt formations.
+        </p>
+
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 40px 0;">
+
+        <h3>Hydraulic Fracturing in Coal Measure Shale Reservoirs</h3>
+        <p><em>Master's Research, December 2018 – January 2021</em></p>
+        
+        <p>
+            My Master's research focused on understanding fracture initiation and propagation geometry in the Longtan Formation 
+            coal measure shale reservoir in the Sichuan Basin. This work was supported by the National Natural Science Foundation 
+            of China (NSFC), Grant No. 51904318, under the project "Fracture Propagation Mechanism of Complex Coal-Bearing Shales."
+        </p>
+
+        <p><strong>Experimental Investigation:</strong></p>
+        <ul>
+            <li>Tested mechanical properties of various lithological rocks using GCTS equipment</li>
+            <li>Characterized vertical variations in lithology, in-situ stress, and mechanical parameters</li>
+            <li>Conducted true triaxial hydraulic fracturing experiments on large-scale samples (30×30×30 cm) of coal-shale interbedded formations</li>
+            <li>Investigated how interlayer in-situ stress differences influence fracture initiation and propagation geometry</li>
+        </ul>
+
+        <p><strong>Numerical Modeling:</strong></p>
+        <p>
+            I developed a three-dimensional hydraulic fracture model in ABAQUS incorporating geological features through a 
+            coupled seepage-stress-damage approach using a Cohesive Zone Model. This model accounts for the complex interaction 
+            between fluid injection, rock deformation, and fracture propagation in heterogeneous formations.
+        </p>
+
+        <p><strong>Key Findings:</strong></p>
+        <p>
+            The research revealed critical insights into how lithological contrasts and stress variations control fracture 
+            height growth and lateral extent in coal measure shale reservoirs, with important implications for optimizing 
+            hydraulic fracturing operations in these complex geological settings.
+        </p>
+
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 40px 0;">
+
+        <h3>Research Expertise</h3>
+        
+        <p><strong>Rock Mechanics:</strong></p>
+        <ul>
+            <li>Uniaxial and triaxial compression testing</li>
+            <li>Direct shear box experiments</li>
+            <li>Brazilian Disc tests</li>
+            <li>Fracture toughness measurements</li>
+        </ul>
+
+        <p><strong>Hydrodynamics & Porous Media:</strong></p>
+        <ul>
+            <li>Flow-through visualization experiments</li>
+            <li>Transport and reactive flow processes</li>
+            <li>Fracture model conceptualization</li>
+            <li>Permeability and porosity measurement</li>
+        </ul>
+
+        <p><strong>Numerical Simulation:</strong></p>
+        <ul>
+            <li>Finite element method (ABAQUS, COMSOL)</li>
+            <li>Cohesive zone modeling</li>
+            <li>Hydro-mechanical-chemical (HMC) coupled simulation</li>
+            <li>User-defined material subroutines (UMAT) in Fortran</li>
+        </ul>
+
+        <p><strong>Software & Tools:</strong></p>
+        <ul>
+            <li>Programming: MATLAB, Fortran</li>
+            <li>Finite Element Analysis: ABAQUS, COMSOL</li>
+            <li>Image Processing: Avizo, MeshLab, SolidWorks</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
