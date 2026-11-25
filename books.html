@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Share – Shihao Fu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: "Georgia", "Times New Roman", serif;
+            margin: 0;
+            padding: 0 6%;
+            line-height: 1.7;
+            color: #222;
+            background: #ffffff;
+        }
+
+        .top-nav {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            margin: 15px 0 30px;
+            text-align: left;
+        }
+
+        .top-nav a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 4px;
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .top-nav .current {
+            font-weight: 700;
+            color: #000;
+        }
+
+        .dot {
+            color: #999;
+            margin: 0 4px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            color: #111;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #0044cc;
+        }
+
+        a:hover {
+            color: #002a80;
+        }
+
+        .section {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            max-width: 850px;
+        }
+
+        .intro {
+            color: #444;
+        }
+
+        /* Table of contents */
+        .book-index {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            margin: 20px 0 10px;
+            padding-left: 20px;
+        }
+
+        .book-index li {
+            margin-bottom: 4px;
+        }
+
+        /* One book entry */
+        .book {
+            border-top: 1px solid #ddd;
+            padding-top: 25px;
+            margin-top: 35px;
+        }
+
+        .book h3 {
+            font-size: 20px;
+            margin: 0 0 4px;
+        }
+
+        .book-meta {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .book-quote {
+            border-left: 3px solid #ccc;
+            margin: 15px 0;
+            padding: 2px 0 2px 15px;
+            color: #555;
+            font-style: italic;
+        }
+
+        .book ul {
+            margin-left: 20px;
+        }
+
+        .book ul li {
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                padding: 0 4%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="top-nav">
+        <a href="index.html">Home</a>
+        <span class="dot">·</span>
+        <a href="research.html">Research</a>
+        <span class="dot">·</span>
+        <a href="publications.html">Publications</a>
+        <span class="dot">·</span>
+        <a href="news.html">News</a>
+        <span class="dot">·</span>
+        <a href="gallery.html">Gallery</a>
+        <span class="dot">·</span>
+        <a href="books.html" class="current">Book Share</a>
+    </div>
+
+    <div class="section">
+        <h2>Book Share</h2>
+
+        <p class="intro">
+            Notes and reflections on books I am reading, on science, careers, history, and anything else
+            that makes me think. Each entry records my key takeaways and ideas.
+        </p>
+
+        <!-- List of books: add one <li> per book, linking to its id below -->
+        <ul class="book-index">
+            <li><a href="#book-1">Book Title One</a> — Author Name</li>
+        </ul>
+
+        <!--
+            HOW TO ADD A NEW BOOK
+            1. Copy everything from <div class="book" ...> to its closing </div> below.
+            2. Paste it directly under this comment, so the newest book appears first.
+            3. Give it a new id (book-2, book-3, ...) and fill in the text.
+            4. Add a matching line to the list above.
+        -->
+
+        <div class="book" id="book-1">
+            <h3>Book Title One</h3>
+            <div class="book-meta">Author Name · Read in Month Year</div>
+
+            <p><strong>In one sentence:</strong> What the book is about, in your own words.</p>
+
+            <p><strong>Key ideas:</strong></p>
+            <ul>
+                <li>First idea that stood out to you</li>
+                <li>Second idea</li>
+                <li>Third idea</li>
+            </ul>
+
+            <p class="book-quote">A short line from the book that stayed with you.</p>
+
+            <p><strong>My thoughts:</strong></p>
+            <p>
+                Your reflections: what you agree or disagree with, how it connects to your research or life,
+                and what you will do differently after reading it.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
